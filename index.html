@@ -26,8 +26,14 @@
                 </div>
             </div>
             <div class="game-inputs" data-game-state="awaiting-inputs">
-                <input id="input-total-players" type="number" min="2" value="5"/>
-                <input id="input-winning-points" type="number" min="1" value="10"/>
+                <div>
+                    <label>Total number of players</label>
+                    <input id="input-total-players" type="number" min="2" value="5"/>
+                </div>
+                <div>
+                    <label>Max points to win</label>
+                    <input id="input-winning-points" type="number" min="1" value="10"/>
+                </div>
                 <button id="start-game-btn" class="btn">Start Game</button>
             </div>
             <div class="hide row" data-game-state="game-on">
