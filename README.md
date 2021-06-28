@@ -1,6 +1,8 @@
 
 # akitrav.github.io
 
+Click [here](https://akitrav.github.io/) to play the game.
+
 **Step 1** : Enter numbers of players and min points to win the game and press **Start Game**.
 ![Screenshot from 2021-06-28 19-03-07](https://user-images.githubusercontent.com/6028167/123644966-86265680-d843-11eb-886a-1c092673bcb6.png)
 
