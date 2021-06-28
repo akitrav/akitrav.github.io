@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h1 onclick="toggle()">Game of dice</h1>
+                <div id="description">
+                    <p>
+                        The "Game of Dice" is a multiplayer game where N players roll a 6 faced dice in a round-robin fashion. Each time a player rolls the dice their points increase by the number (1 to 6) achieved by the roll.
+                    </p>
+                    <p>
+                        As soon as a player accumulates M points they complete the game and are assigned a rank. Remaining players continue to play the game till they accumulate at least M points. The game ends when all players have accumulated at least M points. 
+                    </p>
+                    <h2>Rules</h2>
+                    <ul class="rules">
+                        <li>
+                            If a player rolls the value "6" then they immediately get another chance to roll again and move ahead in the game. 
+                        </li>
+                        <li>
+                            If a player rolls the value "1" two consecutive times then they are forced to skip their next turn as a penalty. 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="game-inputs" data-game-state="awaiting-inputs">
+                <input id="input-total-players" type="number" min="2" value="5"/>
+                <input id="input-winning-points" type="number" min="1" value="10"/>
+                <button id="start-game-btn" class="btn">Start Game</button>
+            </div>
+            <div class="hide row" data-game-state="game-on">
+                <p><span class="fw-semi-bold">Number of Players :</span> <span id="total-players"></span></p>
+                <p><span class="fw-semi-bold">Winning Points : </span> <span id="winning-points"></span></p>
+            </div>
+            <div class="hide row" data-game-state="game-on">
+                <div id="game-master" class="col">
+                    <div class="player-details">
+                        <p><span class="fw-semi-bold">Player Name : </span><span class="player-name"></span></p>
+                        <p><span class="fw-semi-bold">Player History : </span><span class="player-history"></span></p>
+                    </div>
+                    <button id="roll-dice">r</button>
+                    <p class="message"></p>
+                    <p class="outcome"></p>
+                </div>
+                <div id="rank-table" class="col">
+                    <h2>Rank Table</h2>
+                </div>
+            </div>
+            <div id="turn-board" class="turn-board hide" data-game-state="game-on"><div></div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

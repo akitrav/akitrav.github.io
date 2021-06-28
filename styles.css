@@ -1,0 +1,83 @@
+.hide{
+    display: none !important;
+}
+
+.container {
+    margin: 15px auto 0;
+    max-width: 980px;
+}
+
+.fw-semi-bold{
+    font-weight: 600;
+}
+
+.row{
+    display: flex;
+}
+.row .col{
+    flex: 1 0 auto;
+}
+
+.jumbotron{
+    padding: 5px;
+    background-color: #eee;
+    margin-bottom: 30px;
+}
+.jumbotron h1{
+    cursor: pointer;
+    margin: 0;
+}
+.jumbotron h1:hover{
+    background-color: #ddd;
+}
+.game{
+    display: flex;
+}
+
+.player-details{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.player-details p {
+    margin: 0;
+}
+
+.rank-table {
+    padding: 0;
+    margin: 0;
+    display: table;
+}
+.rank-table li {
+    width: 500px;
+    display: table-row;
+    justify-content: space-between;
+}
+.rank-table li.heading{
+    font-weight: 700;
+}
+.rank-table li span{
+    padding: 3px 10px;
+    display: table-cell;
+    text-align: left;
+}
+.rank-table li.won{
+    background-color:  #ADD8E6;
+}
+
+.turn-board{
+    border: 1px solid;
+}
+.turn-board span{
+    border-left: 1px solid;
+    padding: 0 5px;
+}
+.turn-board span:first-child{
+    border-left: none;
+}
+.turn-board span.next{
+    background-color:#FFD580;
+}
+.turn-board span.active{
+    background-color:#9ACD32;
+}
